@@ -1,2 +1,5 @@
 FROM n8nio/n8n:latest
-# Port mapping handled via N8N_PORT env var in Railway (set to ${{PORT}})
+
+ENV N8N_PORT=5678
+ENV N8N_LISTEN_ADDRESS=0.0.0.0
+EXPOSE 5678
